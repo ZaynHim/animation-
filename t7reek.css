@@ -1,0 +1,103 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 20px;
+}
+
+.card {
+    background: rgb(129, 111, 12);
+    padding: 10px;
+    text-align: center;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*   annimison  */
+
+ .fade-in{
+    animation: fadeIn 2s ease infinite alternate ;
+ }
+ @keyframes fadeIn {
+    from{ opacity: 2;}
+    to {opacity: 0;}
+ }
+ .slide-left{
+    animation: SlideLeft 1s infinite alternate ;
+ }
+ @keyframes SlideLeft {
+    from{
+         transform: translateX(100px)
+        }
+    to {
+         transform: translateX(-100px)
+    }
+ }
+
+ .bounce{
+    animation: bounce 1s  infinite alternate ;
+ }
+ @keyframes bounce {
+     from{
+         transform: translatey(100px)
+        }
+    to {
+         transform: translatey(-50px)
+    }
+ }
+
+ .routat{
+    animation: routat 1s linear infinite;
+
+}
+@keyframes routat {
+    from{ transform:rotate(0deg); }
+    to { transform:rotate(900deg); }
+}
+
+.pulse{
+    animation: pulse 7s linear infinite;
+
+}
+@keyframes pulse {
+    from{ transform:scale(0.5); }
+
+
+    to { transform:scale(); }
+}
+
+
+.glow{
+    animation: glow 1s linear infinite alternate;
+    padding: 20px;
+} 
+@keyframes glow {
+    from{ box-shadow: 0 0 30px #360000; }
+    to { box-shadow: 0 0 40px #3c3cd4; }
+}  
+
+/*transformations  */
+.transform{
+transition: transform 1s ease;
+}
+
+.t-translate:hover{
+    transform: translateX(100px) translateY(50px);
+}
+.t-scale:hover{
+    transform: scale(1.2);
+}
+.t-rotate:hover{
+    transform: rotate(45deg);
+}
+.t-skew:hover{
+    transform: skew(20deg, 20deg);
+}
+.t-flip:hover{
+    transform: rotateY(180deg);
+}
+.t-inner-flip:hover{
+    transform: rotateX(180deg);
+    c
+}
