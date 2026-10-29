@@ -15,7 +15,16 @@
     justify-content: center;
 }
 /*   annimison  */
-
+ 
+@media (max-width:1000px) {
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+.card{
+    width: 100%;
+    padding: 10px;
+}
+}
  .fade-in{
     animation: fadeIn 2s ease infinite alternate ;
  }
